@@ -1,0 +1,142 @@
+.turno {
+    width: 40px;
+    padding-left: 15px;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 10px;
+    color: white;
+    opacity: 70%;
+    font-size: 30px;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 138px);
+    align-items: center;
+    flex-direction: column;
+}
+
+.escala {
+    padding: 5px 10px;
+}
+
+
+
+.semana1 {
+    display: flex;
+}
+
+.semana2 {
+    display: flex;
+    margin-top: 20px;
+}
+
+.semana3 {
+    display: flex;
+    margin-top: 20px;
+}
+
+.semana4 {
+    display: flex;
+    margin-top: 20px;
+}
+
+span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    flex-basis: 0;
+}
+
+.escala select {
+    height: 40px;
+    width: 350px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    min-height: 20px;
+    opacity: 70%;
+
+}
+
+p {
+    color: white;
+    opacity: 75%;
+}
+
+
+.botoes-carrossel {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px
+}
+
+.botoes-carrossel .botao {
+    background-color: #ffffff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-color: #ffffff;
+}
+
+.botoes-carrossel .botao.selecionado {
+    background-color: #1d7283;
+}
+
+
+.carrossel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.carrossel .imagem {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+    animation: mudarImagem 0.7s
+}
+
+.carrossel .imagem.ativa {
+    display: block;
+}
+
+@keyframes mudarImagem {
+    from {
+        opacity: 0.85;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.carrossel::after {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7288165266106443) 0%, rgba(0, 0, 0, 0.5663515406162465) 50%, rgba(0, 0, 0, 0.8660714285714286) 100%);
+    z-index: -1;
+}
+
+.imagem {
+    display: block;
+    margin: auto;
+}

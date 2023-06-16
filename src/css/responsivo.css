@@ -1,0 +1,74 @@
+@media (max-width: 1024px) {
+
+    header h1 {
+        font-size: 40px;
+        display: flex;
+    }
+
+    main {
+        display: flex;
+    }
+
+    .escala select {
+        width: 99%;
+    }
+
+}
+
+
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 25px;
+        display: flex;
+    }
+
+    .semana1 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .semana2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+
+    }
+
+    .semana3 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .semana4 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .escala {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .escala select {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 200px;
+    }
+
+    span {
+        padding: 20px;
+    }
+
+}
