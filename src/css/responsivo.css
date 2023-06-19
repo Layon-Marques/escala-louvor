@@ -52,6 +52,13 @@
         margin-top: 40px;
     }
 
+    .semana5 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
     .escala {
         display: flex;
         align-items: center;
