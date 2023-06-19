@@ -3,6 +3,8 @@
     padding-left: 15px;
 }
 
+
+
 header h1 {
     display: flex;
     align-items: center;
@@ -41,6 +43,11 @@ main {
 }
 
 .semana4 {
+    display: flex;
+    margin-top: 20px;
+}
+
+.semana5 {
     display: flex;
     margin-top: 20px;
 }
